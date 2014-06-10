@@ -19,7 +19,7 @@ trigger AccContactPartnerUpdate on Contact (before insert, before update) {
 	    for (Contact c : Trigger.new) {
 	        if (c.RecordTypeId== rt.Id)
 	        {
-	       		c.AccountId=a.Id
+	       		c.AccountId=a.Id;
 	        }
 	    }
 	}
